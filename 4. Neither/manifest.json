@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Wikit",
+    "version": "1.0",
+    "description": "Search Directly into wikipedia",
+    "icons": {
+        "128": "images/icon128.png",
+        "48": "images/icon48.png",
+        "16": "images/icon16.png"
+    },
+    "background": {
+        "service_worker": "eventPage.js"
+    },
+    "permissions": [
+        "scripting",
+        "tabs",
+        "contextMenus"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Page Action",
+    "version": "1.0",
+    "description": "Changes Font Style on a specific page",
+    "icons": {
+        "128": "images/icon128.png",
+        "48": "images/icon48.png",
+        "16": "images/icon16.png"
+    },
+    "action": {
+        "default_icon": "images/icon16.png",
+        "default_popup": "popup.html",
+        "default_title": "PageFontStyle"
+    },
+    "background": {
+        "service_worker": "eventPage.js"
+    },
+    "content_scripts":[
+        {
+            "matches": ["https://developer.chrome.com/*"],
+            "js": ["content.js", "jquery.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://developer.chrome.com/*"
+    ]
+}
