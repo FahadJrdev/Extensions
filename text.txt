@@ -1,0 +1,13 @@
+4 basic type component
+
+background script
+content script
+option page
+ui element
+
+Advance concept
+
+Storage
+Message
+XHR
+i18n
