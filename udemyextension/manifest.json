@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube White Mode",
+    "version": "1.0.0",
+    "description": "Youtube do white background",
+    "icons": {
+        "128": "images/icon128.png",
+        "48": "images/icon48.png",
+        "16": "images/icon16.png"
+    },
+    "background":{
+        "service_worker": "background.js"
+    },
+    "permissions":[
+        "bookmarks"
+    ],
+    "action": {
+        "default_icon": "images/icon16.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://www.youtube.com/*"],
+            "excluded_matches": ["https://*youtube.com/watch*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}

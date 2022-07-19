@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "YouTube dunkler Modus"
+    },
+    "appDescription": {
+        "message": "Diese Erweiterungen verwandeln den YouTube-Hintergrund in Schwarz"
+    },
+    "enableDarkModeText": {
+        "message": "TUN SIE ES DUNKEL"
+    }
+}
